@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 /// @title SimpleSwap a Liquidity Pool Contract 
 /// @notice This contract allows users to add/remove liquidity and swap tokens in an ERC-20 pool.
 /// @dev  revision 4.
-import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol"; 
 contract SimpleSwap is ERC20 {
 
     constructor() ERC20("Liquidity","LT"){
@@ -188,17 +188,3 @@ contract SimpleSwap is ERC20 {
         return (amountIn * reserveOut) / (amountIn + reserveIn);
     }
 }
-
-
-
-/**
-    * @notice This contract is a simple implementation of a liquidity pool for ERC-20 tokens.
-    * It allows users to add and remove liquidity, swap tokens, and retrieve token prices.
-    * The contract emits events for each operation to facilitate tracking and transparency.
-    * 
-    * @dev The contract uses SafeMath for arithmetic operations to prevent overflow/underflow issues.
-    * It assumes the existence of an ERC-20 interface for token interactions.
-
- */
-
-// Note: This contract is a simplified version and does not include features like fee management, slippage control, or advanced price calculations.

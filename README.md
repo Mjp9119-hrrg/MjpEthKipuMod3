@@ -32,12 +32,12 @@ The `SimpleSwap` contract allows users to manage liquidity and perform token swa
 
 ### Constructor
 
-- **constructor()**: 
+- **constructor()**:
   - Initializes the ERC-20 token with name "Liquidity" and symbol "LT".
 
 ### Liquidity Management
 
-- **addLiquidity**: 
+- **addLiquidity**:
   - Allows users to add liquidity to the token pair in the pool.
   - Parameters:
     - `tokenA`: Address of the first token.
@@ -53,7 +53,7 @@ The `SimpleSwap` contract allows users to manage liquidity and perform token swa
     - `amountB`: Effective amount of token B added.
     - `liquidity`: Amount of liquidity tokens issued.
 
-- **removeLiquidity**: 
+- **removeLiquidity**:
   - Allows users to withdraw liquidity from the token pair in the pool.
   - Parameters:
     - `tokenA`: Address of the first token.
@@ -69,7 +69,7 @@ The `SimpleSwap` contract allows users to manage liquidity and perform token swa
 
 ### Token Swapping
 
-- **swapExactTokensForTokens**: 
+- **swapExactTokensForTokens**:
   - Swaps an exact amount of one token for another.
   - Parameters:
     - `amountIn`: Amount of input tokens.
@@ -82,7 +82,7 @@ The `SimpleSwap` contract allows users to manage liquidity and perform token swa
 
 ### Price Retrieval
 
-- **getPrice**: 
+- **getPrice**:
   - Retrieves the price of one token in terms of another.
   - Parameters:
     - `tokenA`: Address of the first token.
@@ -90,7 +90,7 @@ The `SimpleSwap` contract allows users to manage liquidity and perform token swa
   - Returns:
     - `price`: Price of token A in terms of token B.
 
-- **getAmountOut**: 
+- **getAmountOut**:
   - Calculates the amount of tokens received from a swap.
   - Parameters:
     - `amountIn`: Amount of input tokens.
